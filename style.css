@@ -85,6 +85,9 @@ input:focus{
     input {
         width: 50%;
     }
+    p{
+        font-size: 20px;
+    }
   }
 label{
     color: rgb(80,80,80);
@@ -160,13 +163,12 @@ select{
     align-items: center;
     margin-bottom: 20px;
 }
-.roll{
+.rollno{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 }
-
 
 .content{
     display: flex;
@@ -267,4 +269,15 @@ h5{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.find{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.find>input{
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    width: 40%;
 }

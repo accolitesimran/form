@@ -14,7 +14,7 @@
         <p>Enter your information below</p>
         <hr>
         
-        <form class="form" onsubmit="getDetails(); return false;">
+        <form class="form" onsubmit="getDetails();">
             <p>Name</p>
             <div class="name">
                 <div class="firstName">
@@ -84,16 +84,16 @@
             <div class="password">
                 <div class="pass">
                     <p >Password</p>
-                    <input type="password" id="password">
+                    <input type="password" id="password" required>
                 </div>
                 <div class="confPass">
                     <p >Confirm Password</p>
-                    <input type="password"  id="confirmPassword">
+                    <input type="password"  id="confirmPassword" required>
                 </div>
             </div>
             <h5 id="passwordError">** Passwords do not match</h5>
             <h5 id="checkPassword">** Password must include symbols and characters</h5>
-            <h5 id="checkLength">** Password must be atleast 8 characters</h5>
+            <h5 id="checkLength">** Password must be of atleast 4 characters</h5>
             <div class="languages">
                     <p>Do you speak any other languages other than English?</p>
                     <div class="question">
@@ -118,16 +118,19 @@
             <div class="final">
                 <button type="submit" id="submit" >Register</button>
             </div>
+            <div class="find">
+                <input type="text" id="find" placeholder="Enter roll no.">
+            </div>
             <div class="get">
                 <button id="get">Get details</button>
             </div>
         </form>
     </div>
-    <!-- <script
+    <script
   src="https://code.jquery.com/jquery-3.7.1.js"
   integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-  crossorigin="anonymous"></script> -->
-  <script src="/js/jquery-3.7.1.min.js"></script>
+  crossorigin="anonymous"></script>
+  <!-- <script src="/js/jquery-3.7.1.min.js"></script> -->
   <script src="main.js"></script>
 </body>
 
